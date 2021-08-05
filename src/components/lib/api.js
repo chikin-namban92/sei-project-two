@@ -1,13 +1,7 @@
 import axios from 'axios'
 
-const countriesUrl = 'https://restcountries.eu/rest/v2/all'
+const randUrl = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
-export function getAllCountries() {
-  return axios.get(`${countriesUrl}/name`)
-}
-
-const foodsUrl = 'https://world.openfoodfacts.org/api/v0/product/737628064502.json'
-
-export function getAllFoods() {
-  return axios.get(`${foodsUrl}`)
+export function getRandomMeal() {
+  return axios.get(`${randUrl}`)
 }

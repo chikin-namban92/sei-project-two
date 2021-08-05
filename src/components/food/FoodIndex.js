@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAllFoods } from '../lib/api'
+import { getRandomMeal } from '../lib/api'
 
 function FoodIndex() {
   const [foods, setFoods] = React.useState([])
@@ -8,8 +8,8 @@ function FoodIndex() {
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const response = await getAllFoods()
-        setFoods(response.data)
+        const response = await getRandomMeal()
+        setFoods(response.data.meals[0])
       } catch (err) {
         console.log(err)
         setIsError(true)
@@ -18,17 +18,18 @@ function FoodIndex() {
     getData()
   }, [])
 
+  console.log(foods)
   return ( 
     <section className="section">
       <div className="container">
         {isError && <h1>Error</h1>}
         <div className="columns is-multiline">
-          {foods && foods.map(food => (
-            <div key={food.product._id}>
-              <h1>{food.product.name}</h1>
-              <h2>{food.product.origin}</h2>
-            </div>
-          ))}
+          <div>
+            <h2>{foods.strMeal}</h2>
+            <h4>{foods.strArea}</h4>
+            <img src={foods.strMealThumb} alt={foods.strMeal} />
+            <p>{foods.strInstructions}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -36,3 +37,5 @@ function FoodIndex() {
 }
 
 export default FoodIndex
+
+

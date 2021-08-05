@@ -1,4 +1,13 @@
-GET https://world.openfoodfacts.org/api/v0/product/737628064502.json
+GET https://worldfood.guide/api/cuisines/?format=json
+
+###
+
+GET www.themealdb.com/api/json/v1/1/filter.php?a=Italian
+
+###
+
+# GET A SINGLE RANDOM MEAL
+GET https://www.themealdb.com/api/json/v1/1/random.php
 
 ###
 

@@ -2,6 +2,7 @@
   "name": "sei-project-2",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://worldfood.guide/api/",
   "dependencies": {
     "axios": "^0.21.1",
     "bulma": "^0.9.3",

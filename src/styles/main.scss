@@ -1,48 +1,28 @@
-header {
-  display: flex;
-  justify-content: center;
-  margin: 50px auto 0;
+.button-container {
+  text-align: center;
+  margin: 30px 0px 15px 0;
 }
 
-.countries {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+button {
+  padding: 10px;
 }
 
-li {
-  border: 1px solid black;
-  background: lightgray;
-  margin: 5px;
-  padding: 5px;
-  width: 10%;
-  display: flex;
+.card {
+  height: 100%;
+  display:flex;
   flex-direction: column;
 }
 
-h2 {
-  margin: 2px;
-  padding: 2px;
-  text-align: center;
-  font-weight: normal;
+.card-content {
+  margin-top: auto;
 }
 
-h3 {
-  margin: 2px;
-  padding: 2px;
-  text-align: center;
-  font-weight: normal;
+.form-link {
+  margin-left: 3px;
 }
 
-.regions {
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  height: 100%;
-  width: 100%;
+section.section {
+  min-height: calc(100vh - 11.25rem);
 }
 
 @import '~bulma/bulma.sass';
