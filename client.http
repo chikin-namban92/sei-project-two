@@ -11,4 +11,14 @@ GET https://www.themealdb.com/api/json/v1/1/random.php
 
 ###
 
+#GET MEAL FROM ID
+
+GET https://www.themealdb.com/api/json/v1/1/lookup.php?i=52978
+
+###
+
 GET https://restcountries.eu/rest/v2/all
+
+# GET ALL CATEGORIES
+
+GET https://www.themealdb.com/api/json/v1/1/categories.php

@@ -7,22 +7,16 @@ button {
   padding: 10px;
 }
 
-.card {
-  height: 100%;
-  display:flex;
-  flex-direction: column;
+.button-container {
+  text-align: center;
+  margin: 0px 0px 15px 0;
+  padding-top: 300px;
 }
 
-.card-content {
-  margin-top: auto;
-}
-
-.form-link {
-  margin-left: 3px;
-}
-
-section.section {
-  min-height: calc(100vh - 11.25rem);
+.background {
+  background-image: url(/components/assets/burger-bg.jpg);
+  height: 800px;
+  background-size: cover;
 }
 
 @import '~bulma/bulma.sass';

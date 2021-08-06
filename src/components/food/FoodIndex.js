@@ -1,9 +1,12 @@
 import React from 'react'
 import { getRandomMeal } from '../lib/api'
 
+import FoodCard from './FoodCard'
+
 function FoodIndex() {
   const [foods, setFoods] = React.useState([])
   const [isError, setIsError] = React.useState(false)
+  const isLoading = !isError && !foods
 
   React.useEffect(() => {
     const getData = async () => {
@@ -17,18 +20,17 @@ function FoodIndex() {
     }
     getData()
   }, [])
-
-  console.log(foods)
+    
+  // console.log(foods)
   return ( 
     <section className="section">
+      
       <div className="container">
         {isError && <h1>Error</h1>}
-        <div className="columns is-multiline">
+        {isLoading && <h1>Fetching your dinner...</h1>}
+        <div className="hero-body">
           <div>
-            <h2>{foods.strMeal}</h2>
-            <h4>{foods.strArea}</h4>
-            <img src={foods.strMealThumb} alt={foods.strMeal} />
-            <p>{foods.strInstructions}</p>
+            <FoodCard key={foods.idMeal} food={foods} />           
           </div>
         </div>
       </div>
@@ -37,5 +39,3 @@ function FoodIndex() {
 }
 
 export default FoodIndex
-
-

@@ -6,9 +6,21 @@ function Home() {
 
 
   return (
-    <div className='button-container'>
-      <Link to="./food/FoodIndex">Get Random Recipe</Link>
-    </div>
+    <>
+      <header>
+        <h1 className="title is-1 has-text-centered">Random Meal Generator</h1> 
+        <hr />
+      </header>
+      <body className="background">
+        <section className="container">     
+          <div className='button-container'>
+            <Link to="./food/FoodIndex">
+              <button className="button is-centered is-medium is-light">Get Random Recipe</button>
+            </Link>
+          </div>
+        </section>
+      </body>
+    </>
   )
 }
 

@@ -11,6 +11,9 @@ function Navbar() {
             <Link to="/" className="navbar-item">
               🏠
             </Link>
+            <Link to="../common/Categories" className="navbar-item">
+              🍽 Categories
+            </Link>
           </div>
         </div>
       </nav>

@@ -1,0 +1,30 @@
+@import '~bulma/bulma.sass';
+
+.category-list {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  .card-header {
+    background-color: whitesmoke;
+  }
+  .card-image {
+    flex: 1;
+  }
+  .image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-image img {
+    width: auto;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  .card-content {
+    border-top: 1px solid grey;
+  }
+}
