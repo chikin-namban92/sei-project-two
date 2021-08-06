@@ -1,10 +1,37 @@
+@import '~bulma/bulma.sass';
+
+.title {
+  margin: 20px 0px 0px 0px;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: url(/components/assets/burger-bg.jpg);
+  height: 800px;
+  background-size: cover;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.575);
+  border: rgb(100, 255, 178) solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin: 10px 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-container {
   text-align: center;
   margin: 30px 0px 15px 0;
-}
-
-button {
-  padding: 10px;
 }
 
 .button-container {
@@ -13,10 +40,8 @@ button {
   padding-top: 300px;
 }
 
-.background {
-  background-image: url(/components/assets/burger-bg.jpg);
-  height: 800px;
-  background-size: cover;
+.is-white {
+  color: white
 }
 
-@import '~bulma/bulma.sass';
+

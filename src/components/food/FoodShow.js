@@ -35,7 +35,7 @@ function FoodShow() {
               <h2 className="title is-1 has-text-centered">{food.strMeal}</h2>
               <hr />
               <h4 className="subtitle is-3 has-text-centered">{food.strArea}</h4>
-              <div className="image is-centered is-4by3">
+              <div className="image is-centered is-5by3">
                 <img src={food.strMealThumb} className="specific-food" alt={food.strMeal} />
               </div>
               <hr />
