@@ -25,26 +25,28 @@ function FoodShow() {
   console.log(foodId)
 
   return (
-    <>
+
+    <body className="background">
       <section className="section">
         <div className="container">
           {isError && <h1>Error</h1>}
           {isLoading && <h1>Fetching your dinner...</h1>}
           {food && (
             <div>
-              <h2 className="title is-1 has-text-centered">{food.strMeal}</h2>
+              <h2 className="title is-white is-1 has-text-centered">{food.strMeal}</h2>
               <hr />
-              <h4 className="subtitle is-3 has-text-centered">{food.strArea}</h4>
-              <div className="image is-centered is-5by3">
+              <h4 className="subtitle is-white is-3 has-text-centered">{food.strArea}</h4>
+              <div className="image is-centered image is-128x128">
                 <img src={food.strMealThumb} className="specific-food" alt={food.strMeal} />
               </div>
               <hr />
-              <p>{food.strInstructions}</p>
+              <p className="instuctions is-white">{food.strInstructions}</p>
             </div>
           )}
         </div>
       </section>
-    </>
+    </body>
+
   )
 }
 

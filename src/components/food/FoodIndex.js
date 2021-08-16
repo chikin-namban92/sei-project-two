@@ -21,20 +21,20 @@ function FoodIndex() {
     getData()
   }, [])
     
-  // console.log(foods)
   return ( 
-    <section className="section">
-      
-      <div className="container">
-        {isError && <h1>Error</h1>}
-        {isLoading && <h1>Fetching your dinner...</h1>}
-        <div className="hero-body">
-          <div>
-            <FoodCard key={foods.idMeal} food={foods} />           
+    <body className="background">
+      <section className="section">
+        <div className="container">
+          {isError && <h1>Error</h1>}
+          {isLoading && <h1>Fetching your dinner...</h1>}
+          <div className="hero-body">
+            <div>
+              <FoodCard key={foods.idMeal} food={foods} />           
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </body>
   )
 }
 
